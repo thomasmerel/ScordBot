@@ -17,6 +17,7 @@ ENV settings :
 - `PREFIX` : Command prefix.
 - `SERVER_PATH` : Path where the .json servers files are located.
 - `ACTION_PATH` : Path where the .json actions files are located.
+- `LOG_PATH` : Path where the log files is located.
 - `DATE_FORMAT` : Date format the users have to respect. It's like the law but way cooler.
 
 Dependencies :
@@ -25,6 +26,10 @@ Dependencies :
 - [Cron](https://www.npmjs.com/package/cron)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Moment](https://www.npmjs.com/package/moment)
+- [@discordjs/uws](https://www.npmjs.com/package/@discordjs/uws)
+- [Bufferutil](https://www.npmjs.com/package/bufferutil)
+- [Libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
+- [OpusScript](https://www.npmjs.com/package/opusscript)
 
 # Commands
 | Command | Action |
@@ -42,7 +47,7 @@ Dependencies :
 
 # Invite this bot to your server
 
-[Invite](https://discordapp.com/api/oauth2/authorize?client_id=579998659161227285&scope=bot&permissions=518145)
+[Invite](https://discordapp.com/api/oauth2/authorize?client_id=678527921140400138&permissions=8&scope=bot)
 
 # License
 
