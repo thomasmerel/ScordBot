@@ -1,4 +1,5 @@
 const Command = require('./command');
+const Logs = require('../actions/logs');
 
 module.exports = class Sroll extends Command {
     static match(message) {
@@ -29,8 +30,7 @@ module.exports = class Sroll extends Command {
 
             let response = '```';
 
-            console.log('Secret Roll ' + roll);
-            console.log('-');
+            Logs.snap('[Roll] Secret Roll : ' + roll);
 
             let nbitems = 5;
             let counter = 0;
@@ -43,7 +43,7 @@ module.exports = class Sroll extends Command {
                     }
                     let result = Math.floor(Math.random() * diceof) + 1;
 
-                    console.log(result);
+                    Logs.snap('[Roll] ' + result);
 
                     let space = '';
                     if (result < 10) {
@@ -60,7 +60,6 @@ module.exports = class Sroll extends Command {
                 response = response + '\n' + line;
             }
             response = response + '```';
-            console.log('-----');
 
             message.author.send(response)
         }

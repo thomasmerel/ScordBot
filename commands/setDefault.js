@@ -1,6 +1,6 @@
 const Command = require('./command');
 
-module.exports = class Add extends Command {
+module.exports = class SetDefault extends Command {
     static match(message) {
         return message.content.startsWith(process.env.PREFIX + 'setDefault');
     }

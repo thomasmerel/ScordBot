@@ -1,4 +1,5 @@
 const Command = require('./command');
+const Logs = require('../actions/logs');
 
 module.exports = class Ping extends Command {
     static match(message) {
@@ -7,5 +8,6 @@ module.exports = class Ping extends Command {
 
     static action(message) {
         message.channel.send('Pong! :ping_pong:');
+        Logs.snap('[Ping] pong!');
     }
 };

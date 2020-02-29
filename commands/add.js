@@ -1,5 +1,6 @@
 const Command = require('./command');
 const moment = require('moment');
+const Logs = require('../actions/logs');
 
 module.exports = class Add extends Command {
     static match(message) {
@@ -20,6 +21,7 @@ module.exports = class Add extends Command {
 
             let potentialAge = moment().year() - bDate.year();
             if (potentialAge < 13) {
+                Logs.snap('[Add birthday] Too young');
                 message.reply("tu as " + potentialAge + " ans ? Qu'est-ce que tu branle là ? Rentre chez toi, " +
                     "ta mère t'a fait des gaufres. \n" +
                     "https://media.giphy.com/media/ac7MA7r5IMYda/giphy.gif")
@@ -27,6 +29,7 @@ module.exports = class Add extends Command {
                     .catch();
                 return false;
             } else if (potentialAge > 90) {
+                Logs.snap('[Add birthday] Too old');
                 message.reply("Mmmh... :thinking: Tu as " + potentialAge + " ans ? T'es sûr de toi ? :older_man:" +
                     ":older_woman: \n" +
                     "ttps://media.giphy.com/media/BgBf6pW9qOgQU/giphy.gif")
@@ -51,10 +54,12 @@ module.exports = class Add extends Command {
 
                             if (obj.hasOwnProperty("bdays")) {
                                 if (obj.bdays.hasOwnProperty(bPerson.id)) {
+                                    Logs.snap('[Add birthday] birthday updated');
                                     message.reply("ton anniversaire a bien été mis a jour.")
                                         .then()
                                         .catch();
                                 } else {
+                                    Logs.snap('[Add birthday] birthday added');
                                     message.reply("ton anniversaire a bien été ajouté.")
                                         .then()
                                         .catch();
@@ -63,6 +68,7 @@ module.exports = class Add extends Command {
                             } else {
                                 obj.bdays = new Object();
 
+                                Logs.snap('[Add birthday] first birthday added');
                                 message.reply("ton anniversaire a bien été ajouté (félicitation tu es le premier. :clap:).")
                                     .then()
                                     .catch();

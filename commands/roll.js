@@ -1,4 +1,5 @@
 const Command = require('./command');
+const Logs = require('../actions/logs');
 
 module.exports = class Roll extends Command {
     static match(message) {
@@ -29,8 +30,7 @@ module.exports = class Roll extends Command {
 
             let response = '```';
 
-            console.log('Public Roll ' + roll);
-            console.log('-');
+            Logs.snap('[Roll] Public Roll : ' + roll);
 
             let nbitems = 5;
             let counter = 0;
@@ -43,7 +43,7 @@ module.exports = class Roll extends Command {
                     }
                     let result = Math.floor(Math.random() * diceof) + 1;
 
-                    console.log(result);
+                    Logs.snap('[Roll] ' + result);
 
                     let space = '';
                     if(result < 10) {
@@ -60,7 +60,6 @@ module.exports = class Roll extends Command {
                 response = response + '\n' + line;
             }
             response = response + '```';
-            console.log('-----');
 
             message.channel.send(response);
         }

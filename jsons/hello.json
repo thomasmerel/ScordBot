@@ -1,16 +1,17 @@
 {
 	"triggers": [
-		"bonjour",
-		"salut",
-		"hey",
-		"plop",
-		"coucou",
-		"cc",
-		"yop",
-		"yo",
-		"wesh",
-		"wsh",
-		"hello"
+		"Bonjour",
+		"Salut",
+		"Hey",
+		"Plop",
+		"Coucou",
+		"Cc",
+		"Yop",
+		"Yo",
+		"Wesh",
+		"Wsh",
+		"Hello",
+		"Bjr"
 	],
 	"answers": [
 		"Salut",
@@ -25,6 +26,7 @@
 		"Tg",
 		"Wesh",
 		"Wsh",
-		"Yo tout le monde c'est Squeezie !"
+		"Yo tout le monde c'est Squeezie !",
+		"https://tenor.com/view/coucou-missjirachi-miss-jirachi-wave-gif-12961218"
 	]
 }

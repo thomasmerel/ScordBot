@@ -1,8 +1,8 @@
-# Botniversaire
+# ScordBot
 
 Install the bot :
 ```sh
-$ git clone git@github.com:thomasmerel/Botniversaire.git
+$ git clone git@github.com:thomasmerel/ScordBot.git
 $ npm install
 ```
 
@@ -15,7 +15,8 @@ $ node index.js
 ENV settings :
 - `TOKEN` : Discord bot token.
 - `PREFIX` : Command prefix.
-- `SERVER_PATH` : Path where the .json files are located.
+- `SERVER_PATH` : Path where the .json servers files are located.
+- `ACTION_PATH` : Path where the .json actions files are located.
 - `DATE_FORMAT` : Date format the users have to respect. It's like the law but way cooler.
 
 Dependencies :
@@ -37,7 +38,6 @@ Dependencies :
 
 # ToDo
 
-- Log file : Record all the actions done by the bot.
 - Improve the bot, so he will become a real little boy.
 
 # Invite this bot to your server
@@ -57,4 +57,4 @@ This project is on Beer-Ware license :
 
 # Links
 
-[Twitter](https://twitter.com/Vulture___) | [Website](https://thomas-merel.fr) | [Github](https://github.com/thomasmerel) | [Vulture#9999](https://discordapp.com/)
+[Twitter](https://twitter.com/Vulture___) | [Website](https://thomas-merel.fr) | [Github](https://github.com/thomasmerel) | [Vulture#2306](https://discordapp.com/)
