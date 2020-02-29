@@ -23,10 +23,13 @@ module.exports = class Random {
                     } else {
                         obj = JSON.parse(data);
 
-                        let randomResp = obj[Math.floor(Math.random() * obj.length)];
+                        let randomRespRaw = obj[Math.floor(Math.random() * obj.length)];
 
-                        message.channel.send(randomResp);
-                        Logs.snap('[Random] : ' + randomResp);
+                        let response = randomRespRaw.replace('<user>', message.author.username);
+                        response = response.replace('<message>', message.toString().toUpperCase());
+
+                        message.channel.send(response);
+                        Logs.snap('[Random] : ' + response);
                     }
                 });
             } else {

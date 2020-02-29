@@ -43,6 +43,8 @@ Dependencies :
 
 # ToDo
 
+- Add WarpJS.
+- Add Google Natural Language API.
 - Improve the bot, so he will become a real little boy.
 
 # Invite this bot to your server
