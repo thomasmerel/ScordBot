@@ -36,7 +36,7 @@ let prefix = process.env.PREFIX;
 
 //On start
 bot.on('ready', function () {
-    Logs.snap('bot start');
+    Logs.snap('[SYSTEM] Start');
     bot.user.setActivity(prefix + 'help').catch();
     Wish.action(bot);
 });
@@ -115,7 +115,9 @@ bot.on('message', function (message) {
 });
 
 //On error
-bot.on('error', console.error);
+bot.on('error', function (error) {
+    Logs.snap('[ERROR] ' + error);
+});
 
 //Cron tabs
 new CronJob('0 0 7 * * *', function () {

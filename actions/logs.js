@@ -11,12 +11,14 @@ module.exports = class Logs {
         fs.exists(path, function (exists) {
             if (exists) {
                 fs.appendFile(path, log, function (err) {
-                    if (err) throw err;
+                    if (err) process.stdout.write(err);
                 });
+                process.stdout.write(log);
             } else {
                 fs.writeFile(path, log, function (err) {
-                    if (err) throw err;
+                    if (err) process.stdout.write(err);
                 });
+                process.stdout.write(log);
             }
         });
     }

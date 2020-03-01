@@ -30,7 +30,7 @@ module.exports = class Sroll extends Command {
 
             let response = '```';
 
-            Logs.snap('[Roll] Secret Roll : ' + roll);
+            Logs.snap('[Secret Roll] Secret Roll : ' + roll);
 
             let nbitems = 5;
             let counter = 0;
@@ -43,7 +43,7 @@ module.exports = class Sroll extends Command {
                     }
                     let result = Math.floor(Math.random() * diceof) + 1;
 
-                    Logs.snap('[Roll] ' + result);
+                    Logs.snap('[Secret Roll] ' + result);
 
                     let space = '';
                     if (result < 10) {

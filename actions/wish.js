@@ -2,7 +2,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Wish {
     static action(bot) {
-        Logs.snap('[Wish] : start wish');
+        Logs.snap('[Wish] start wish');
 
         let fs = require('fs');
         const moment = require('moment');
@@ -27,7 +27,6 @@ module.exports = class Wish {
 
                             for (let key in obj.bdays) {
 
-
                                 let bdate = moment(obj.bdays[key]);
                                 let bdateYear = bdate.year();
                                 bdate.year(1970);
@@ -42,7 +41,7 @@ module.exports = class Wish {
 
                                         let random = Math.random() * (100 - 1) + 1;
 
-                                        Logs.snap('Wish : wishing birhday : ' + user);
+                                        Logs.snap('[Wish] wishing birhday : ' + user);
 
                                         if (random < 25) {
                                             defaultChan.send(
@@ -72,7 +71,7 @@ module.exports = class Wish {
                                         }
                                     }
                                 } else {
-                                    Logs.snap('Wish : no birthday');
+                                    Logs.snap('[Wish] no birthday');
                                 }
                             }
                         }
