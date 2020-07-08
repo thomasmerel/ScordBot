@@ -15,12 +15,12 @@
   "dependencies": {
     "@discordjs/uws": "^10.149.0",
     "bufferutil": "^4.0.1",
-    "cron": "^1.7.1",
-    "discord.js": "^11.5.0",
-    "dotenv": "^8.0.0",
+    "cron": "^1.8.2",
+    "discord.js": "^11.6.4",
+    "dotenv": "^8.2.0",
     "http-server": "^0.12.3",
     "libsodium-wrappers": "^0.7.6",
-    "moment": "^2.24.0",
+    "moment": "^2.27.0",
     "opusscript": "0.0.6"
   }
 }

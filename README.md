@@ -14,11 +14,15 @@ $ node index.js
 
 ENV settings :
 - `TOKEN` : Discord bot token.
-- `PREFIX` : Command prefix.
+- `BOT_PREFIX` : Command prefix.
 - `SERVER_PATH` : Path where the .json servers files are located.
 - `ACTION_PATH` : Path where the .json actions files are located.
 - `LOG_PATH` : Path where the log files is located.
 - `DATE_FORMAT` : Date format the users have to respect. It's like the law but way cooler.
+- `RANDOM_RESPONSE` : Chances of random responses.
+- `CC_FS_BUCKET` : Clevercloud FS Bucket.
+- `AUTHORIZED_DM` : Authorize bot to respond to private messages.
+
 
 Dependencies :
 - [NodeJS](https://nodejs.org/en/)
@@ -30,6 +34,7 @@ Dependencies :
 - [Bufferutil](https://www.npmjs.com/package/bufferutil)
 - [Libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
 - [OpusScript](https://www.npmjs.com/package/opusscript)
+- [http-server](https://www.npmjs.com/package/http-server)
 
 # Commands
 | Command | Action |
@@ -39,11 +44,13 @@ Dependencies :
 | --delete | Delete user's birthday |
 | --setDefault | Set default channel where birthday are wished (Admin only) |
 | --source | Give bot's Github |
+| --roll XdY | Roll a dice (x=nb dice ; y=nb dice faces) |
+| --sroll XdY | Roll a secret dice (x=nb dice ; y=nb dice faces) |
 | --ping | Pong. |
 
 # ToDo
 
-- Add WarpJS.
+- ~~Clevercloud proof.~~
 - Add Google Natural Language API.
 - Improve the bot, so he will become a real little boy.
 
