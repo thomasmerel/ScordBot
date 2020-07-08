@@ -32,7 +32,7 @@ const Answers = require('./actions/answers');
 const Hello = require('./actions/hello');
 
 //Get env
-let prefix = process.env["PREFIX"];
+let prefix = process.env["BOT_PREFIX"];
 let dm = process.env["AUTHORIZED_DM"];     
 
 //On start
