@@ -11,7 +11,7 @@ module.exports = class Wish {
 
         allguild.forEach(function (guild) {
 
-            let path = process.env.SERVER_PATH;
+            let path = process.env["SERVER_PATH"];
             let file = path + '/' + guild.id + '.json';
 
             fs.exists(file, function (exists) {

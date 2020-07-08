@@ -3,7 +3,7 @@ const Logs = require('../actions/logs');
 module.exports = class Mentions {
     static action(message) {
         let fs = require('fs');
-        let path = process.env.ACTION_PATH;
+        let path = process.env["ACTION_PATH"];
         let file = path + '/' + 'mentions' + '.json';
 
         let obj = {};

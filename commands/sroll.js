@@ -3,7 +3,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Sroll extends Command {
     static match(message) {
-        return message.content.startsWith(process.env.PREFIX + 'sroll');
+        return message.content.startsWith(process.env["PREFIX"] + 'sroll');
     }
 
     static action(message) {

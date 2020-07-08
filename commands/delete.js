@@ -3,14 +3,14 @@ const Logs = require('../actions/logs');
 
 module.exports = class Delete extends Command {
     static match(message) {
-        return message.content.startsWith(process.env.PREFIX + 'delete');
+        return message.content.startsWith(process.env["PREFIX"] + 'delete');
     }
 
     static action(message) {
         let bPerson = message.author;
         let server = message.guild;
 
-        let path = process.env.SERVER_PATH;
+        let path = process.env["SERVER_PATH"];
         let file = path + '/' + server.id + '.json';
 
         let fs = require('fs');

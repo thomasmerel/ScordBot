@@ -10,7 +10,7 @@ module.exports = class Random {
         }
 
         let fs = require('fs');
-        let path = process.env.ACTION_PATH;
+        let path = process.env["ACTION_PATH"];
         let file = path + '/' + 'random' + '.json';
 
         let obj = {};

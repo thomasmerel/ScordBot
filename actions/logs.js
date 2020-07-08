@@ -3,7 +3,7 @@ module.exports = class Logs {
         let fs = require('fs');
         const moment = require('moment');
 
-        let path = process.env.LOG_PATH;
+        let path = process.env["LOG_PATH"];
 
         let now = moment().format('DD-MM-YYYY HH:mm:ss');
         let log = '[' + now + '] - ' + message + '\r\n';

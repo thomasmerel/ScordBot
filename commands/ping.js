@@ -3,7 +3,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Ping extends Command {
     static match(message) {
-        return message.content.startsWith(process.env.PREFIX + 'ping');
+        return message.content.startsWith(process.env["PREFIX"] + 'ping');
     }
 
     static action(message) {

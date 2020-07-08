@@ -4,7 +4,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Add extends Command {
     static match(message) {
-        return message.content.startsWith(process.env.PREFIX + 'add');
+        return message.content.startsWith(process.env["PREFIX"] + 'add');
     }
 
     static action(message) {
@@ -13,7 +13,7 @@ module.exports = class Add extends Command {
 
         let args = message.content.split(' ');
 
-        let dateFormat = process.env.DATE_FORMAT;
+        let dateFormat = process.env["DATE_FORMAT"];
 
         if (moment(args[1], dateFormat, true).isValid()) {
             let bDate = moment(args[1], dateFormat);
@@ -38,7 +38,7 @@ module.exports = class Add extends Command {
                 return false;
             }
 
-            let path = process.env.SERVER_PATH;
+            let path = process.env["SERVER_PATH"];
             let file = path + '/' + server.id + '.json';
 
             let fs = require('fs');

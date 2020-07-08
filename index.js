@@ -31,8 +31,9 @@ const Wish = require('./actions/wish');
 const Answers = require('./actions/answers');
 const Hello = require('./actions/hello');
 
-//Set prefix
-let prefix = process.env.PREFIX;
+//Get env
+let prefix = process.env["PREFIX"];
+let dm = process.env["AUTHORIZED_DM"];     
 
 //On start
 bot.on('ready', function () {
@@ -47,8 +48,10 @@ bot.on('message', function (message) {
         return false;
     }
 
-    if (message.channel.type === 'dm' || message.channel.type === 'group') {
-        return false;
+    if (dm === 'FALSE') {
+        if (message.channel.type === 'dm' || message.channel.type === 'group') {
+            return false;
+        }
     }
 
     if (message.isMentioned(bot.user)) {
@@ -73,7 +76,7 @@ bot.on('message', function (message) {
     }
 
     //Hello
-    let path = process.env.ACTION_PATH;
+    let path = process.env["ACTION_PATH"];
     let fileHello = path + '/' + 'hello' + '.json';
 
     fs.exists(fileHello, function (exists) {
@@ -124,4 +127,4 @@ new CronJob('0 0 7 * * *', function () {
     Wish.action(bot);
 }, null, true, 'Europe/Paris');
 
-bot.login(process.env.TOKEN);
+bot.login(process.env["TOKEN"]);

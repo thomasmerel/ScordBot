@@ -2,7 +2,7 @@ const Command = require('./command');
 
 module.exports = class SetDefault extends Command {
     static match(message) {
-        return message.content.startsWith(process.env.PREFIX + 'setDefault');
+        return message.content.startsWith(process.env["PREFIX"] + 'setDefault');
     }
 
     static action(message) {
@@ -19,7 +19,7 @@ module.exports = class SetDefault extends Command {
 
         let server = message.guild;
 
-        let path = process.env.SERVER_PATH;
+        let path = process.env["SERVER_PATH"];
         let file = path + '/' + server.id + '.json';
 
         if (message.channel.nsfw) {
