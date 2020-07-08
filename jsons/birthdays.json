@@ -1,0 +1,14 @@
+{
+	"sentences": [
+		"Hey <user> ! C'est pas ton anniversaire aujourd'hui ? Bon anniversaire ! ça te fais quoi ? <age> ans ? 'tain t'es une vielle personne maintenant !\n ",
+		":tada: :gift: Joyeux anniversaire à <user> ! C'est ses <age> ans aujourd'hui ! :gift: :tada:\n ",
+		":boom: Boom ! C'est l'anniversaire de <user> ! AH ! Tu l'as pas vu venir ! Fêtes lui ses <age> ! :clap:\n ",
+		"WOW ! ARRETEZ TOUT ! C'EST L'ANNIVERSAIRE DE <user> ! JOYEUX DE PUTAIN DE <age> ANS !\n "
+	],
+	"gifs": [
+		"https://media.giphy.com/media/3oKIPidnxHJQ3SuwwM/giphy.gif",
+		"https://media.giphy.com/media/3oEhn78T277GKAq6Gc/giphy.gif",
+		"https://media.giphy.com/media/kwSZzHYRwd4Lm/giphy.gif",
+		"https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif"
+	]
+}

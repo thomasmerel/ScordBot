@@ -39,36 +39,38 @@ module.exports = class Wish {
 
                                     if (defaultChan !== null) {
 
-                                        let random = Math.random() * (100 - 1) + 1;
+                                        let fs = require('fs');
+                                        let path = process.env["ACTION_PATH"];
+                                        let file = path + '/' + 'birthdays' + '.json';
 
-                                        Logs.snap('[Wish] wishing birhday : ' + user);
+                                        let obj = {};
 
-                                        if (random < 25) {
-                                            defaultChan.send(
-                                                "Hey " + user + " ! C'est pas ton anniversaire aujourd'hui ? Bon " +
-                                                "anniversaire ! ça te fais quoi ? " + age + " ans ? 'tain t'es une vielle" +
-                                                " personne maintenant !\n" +
-                                                "https://media.giphy.com/media/3oEhn78T277GKAq6Gc/giphy.gif"
-                                            );
-                                        } else if (random > 25 && random < 50) {
-                                            defaultChan.send(
-                                                ":tada: :gift: Joyeux anniversaire à " + user + " ! C'est ses " + age +
-                                                " ans aujourd'hui ! :gift: :tada:\n" +
-                                                "https://media.giphy.com/media/3oKIPidnxHJQ3SuwwM/giphy.gif"
-                                            );
-                                        } else if (random > 50 && random < 75) {
-                                            defaultChan.send(
-                                                ":boom: Boom ! C'est l'anniversaire de " + user +
-                                                " ! AH ! Tu l'as pas vu venir ! Fêtes lui ses " + age + " ! :clap:\n" +
-                                                "https://media.giphy.com/media/kwSZzHYRwd4Lm/giphy.gif"
-                                            );
-                                        } else {
-                                            defaultChan.send(
-                                                "WOW ! ARRETEZ TOUT ! C'EST L'ANNIVERSAIRE DE " + user + " ! JOYEUX DE " +
-                                                "PUTAIN DE " + age + " ANS !\n" +
-                                                "https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif"
-                                            );
-                                        }
+                                        fs.exists(file, function (exists) {
+                                            if (exists) {
+                                                fs.readFile(file, function readFileCallback(err, data) {
+                                                    if (err) {
+                                                        console.error(err);
+                                                    } else {
+                                                        obj = JSON.parse(data);
+
+                                                        let sentences = obj['sentences'];
+                                                        let gifs = obj['gifs'];
+
+                                                        let randomSentenceRaw = sentences[Math.floor(Math.random() * sentences.length)];
+                                                        let randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+
+                                                        let randomSentenceWithUser = randomSentenceRaw.replace('<user>', user);
+                                                        let randomSentenceWithVariables = randomSentenceWithUser.replace('<age>', age);
+                                                        let finalSentence = randomSentenceWithVariables + randomGif;
+
+                                                        defaultChan.send(finalSentence);
+                                                        Logs.snap('[Wish birthday] : ' + finalSentence);
+                                                    }
+                                                });
+                                            } else {
+                                                Logs.snap('[404]FNF : ' + file);
+                                            }
+                                        });
                                     }
                                 } else {
                                     Logs.snap('[Wish] no birthday');
