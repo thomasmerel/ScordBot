@@ -2,7 +2,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Random {
     static action(message) {
-        let chances = 1000;
+        let chances = process.env["RANDOM_RESPONSE"];
         let random = Math.floor(Math.random() * chances);
 
         if(random !== 0) {
