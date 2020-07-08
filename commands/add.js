@@ -4,7 +4,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Add extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["PREFIX"] + 'add');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'add');
     }
 
     static action(message) {

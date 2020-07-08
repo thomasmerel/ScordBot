@@ -2,7 +2,7 @@ const Command = require('./command');
 
 module.exports = class Help extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["PREFIX"] + 'help');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'help');
     }
 
     static action(message) {

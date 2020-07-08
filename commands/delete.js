@@ -3,7 +3,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Delete extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["PREFIX"] + 'delete');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'delete');
     }
 
     static action(message) {

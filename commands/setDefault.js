@@ -2,7 +2,7 @@ const Command = require('./command');
 
 module.exports = class SetDefault extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["PREFIX"] + 'setDefault');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'setDefault');
     }
 
     static action(message) {

@@ -3,7 +3,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Sources extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["PREFIX"] + 'sources');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'sources');
     }
 
     static action(message) {
