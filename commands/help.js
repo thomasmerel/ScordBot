@@ -1,4 +1,5 @@
 const Command = require('./command');
+const Logs = require('../actions/logs');
 
 module.exports = class Help extends Command {
     static match(message) {
