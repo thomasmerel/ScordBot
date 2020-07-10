@@ -20,7 +20,7 @@ module.exports = class List extends Command {
             message.channel.send('"RGPD" ça te dis quelque chose ?!! :rage:\n' +
                 'https://media.giphy.com/media/AzdZrT9OGEIyQ/giphy.gif');
         }
-        Logs.snap('[List] ask for list');
+        Logs.snap('[List] : ask for list');
         return false;
     }
 };

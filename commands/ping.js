@@ -8,6 +8,6 @@ module.exports = class Ping extends Command {
 
     static action(message) {
         message.channel.send('Pong! :ping_pong:');
-        Logs.snap('[Ping] pong!');
+        Logs.snap('[Ping] : pong!');
     }
 };

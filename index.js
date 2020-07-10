@@ -36,6 +36,7 @@ const Delete = require('./commands/delete');
 const List = require('./commands/list');
 const Default = require('./commands/setDefault');
 const Sources = require('./commands/sources');
+const Poll = require('./commands/poll');
 
 //Actions
 const Mentions = require('./actions/mentions');
@@ -106,6 +107,7 @@ bot.on('message', function (message) {
                 Sources.parse(message) ||
                 Roll.parse(message) ||
                 Sroll.parse(message) ||
+                Poll.parse(message) ||
                 Help.parse(message);
             
             messageCounter++;

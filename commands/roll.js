@@ -30,7 +30,7 @@ module.exports = class Roll extends Command {
 
             let response = '```';
 
-            Logs.snap('[Roll] Public Roll : ' + roll);
+            Logs.snap('[Roll] : Public Roll : ' + roll);
 
             let nbitems = 5;
             let counter = 0;

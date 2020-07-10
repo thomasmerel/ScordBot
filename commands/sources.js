@@ -8,6 +8,6 @@ module.exports = class Sources extends Command {
 
     static action(message) {
         message.channel.send(":beer: Voici les sources du bot : https://github.com/thomasmerel/ScordBot");
-        Logs.snap('[Sources] ask for sources');
+        Logs.snap('[Sources] : ask for sources');
     }
 };

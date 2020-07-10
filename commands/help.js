@@ -15,6 +15,6 @@ module.exports = class Help extends Command {
             '`--setDefault` => Defini le channel où seront souhaité les anniversaires (Admin only)' + '\n' +
             '`--ping` => Pong.'
         );
-        Logs.snap('[Help] ask for help');
+        Logs.snap('[Help] : ask for help');
     }
 };
