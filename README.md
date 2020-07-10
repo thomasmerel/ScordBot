@@ -54,6 +54,9 @@ Dependencies :
 # ToDo
 
 - ~~Clevercloud proof.~~
+- Add Poll.
+- Add more sentences.
+- Add multi languages ?
 - Add Google Natural Language API.
 - Improve the bot, so he will become a real little boy.
 
