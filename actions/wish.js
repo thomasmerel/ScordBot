@@ -2,7 +2,7 @@ const Logs = require('../actions/logs');
 
 module.exports = class Wish {
     static action(bot) {
-        Logs.snap('[Wish] start wish');
+        Logs.snap('[Wish] : start wish');
 
         let fs = require('fs');
         const moment = require('moment');
@@ -73,7 +73,7 @@ module.exports = class Wish {
                                         });
                                     }
                                 } else {
-                                    Logs.snap('[Wish] no birthday');
+                                    Logs.snap('[Wish] : no birthday');
                                 }
                             }
                         }

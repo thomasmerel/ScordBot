@@ -22,6 +22,7 @@ ENV settings :
 - `RANDOM_RESPONSE` : Chances of random responses.
 - `CC_FS_BUCKET` : Clevercloud FS Bucket.
 - `AUTHORIZED_DM` : Authorize bot to respond to private messages.
+- `PORT` : HTTP Server port.
 
 
 Dependencies :

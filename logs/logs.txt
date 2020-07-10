@@ -232,3 +232,66 @@
 [29-03-2020 00:26:35] - [Roll] 13
 [29-03-2020 00:30:58] - [Roll] Public Roll : 1d20
 [29-03-2020 00:30:58] - [Roll] 20
+[09-07-2020 23:06:43] - [SYSTEM] Start
+[09-07-2020 23:06:43] - [Wish] start wish
+[09-07-2020 23:06:43] - [Wish] no birthday
+[09-07-2020 23:13:15] - [SYSTEM] Start
+[09-07-2020 23:13:15] - [Wish] start wish
+[09-07-2020 23:13:15] - [Wish] no birthday
+[09-07-2020 23:14:20] - [SYSTEM] Start
+[09-07-2020 23:14:20] - [Wish] start wish
+[09-07-2020 23:14:20] - [Wish] no birthday
+[09-07-2020 23:15:20] - [Stop] : ...
+[09-07-2020 23:15:21] - [Stop] : Bon... t'as fini ?
+[09-07-2020 23:20:17] - [SYSTEM] : Start
+[09-07-2020 23:20:17] - [Wish] : start wish
+[09-07-2020 23:20:17] - [Wish] : no birthday
+[09-07-2020 23:21:25] - [SYSTEM] : Start
+[09-07-2020 23:21:25] - [Wish] : start wish
+[09-07-2020 23:21:25] - [Wish] : no birthday
+[09-07-2020 23:40:28] - [SYSTEM] : Start
+[09-07-2020 23:40:28] - [Wish] : start wish
+[09-07-2020 23:40:28] - [Wish] : no birthday
+[09-07-2020 23:42:18] - [SYSTEM] : Start
+[09-07-2020 23:42:18] - [Wish] : start wish
+[09-07-2020 23:42:18] - [Wish] : no birthday
+[09-07-2020 23:43:08] - [SYSTEM] : Start
+[09-07-2020 23:43:08] - [Wish] : start wish
+[09-07-2020 23:43:08] - [Wish] : no birthday
+[09-07-2020 23:44:10] - [SYSTEM] : Start
+[09-07-2020 23:44:10] - [Wish] : start wish
+[09-07-2020 23:44:10] - [Wish] : no birthday
+[09-07-2020 23:44:15] - [Stop] : STOP !
+[09-07-2020 23:44:20] - [Stop] : STOP !
+[09-07-2020 23:44:21] - [Stop] : ça suffit là, non ?
+[09-07-2020 23:44:22] - [Stop] : Stop.
+[09-07-2020 23:44:23] - [Stop] : Bon... t'as fini ?
+[09-07-2020 23:44:56] - [SYSTEM] : Start
+[09-07-2020 23:44:56] - [Wish] : start wish
+[09-07-2020 23:44:56] - [Wish] : no birthday
+[09-07-2020 23:45:00] - [Stop] : Stop.
+[09-07-2020 23:45:14] - [Stop] : Arrête toi là connard.
+[09-07-2020 23:56:12] - [SYSTEM] : Start
+[09-07-2020 23:56:12] - [Wish] : start wish
+[09-07-2020 23:56:12] - [Wish] : no birthday
+[09-07-2020 23:56:24] - [Mentions] : Tu me cherches connard ?
+[09-07-2020 23:56:29] - [Mentions] : Un problème ?
+[09-07-2020 23:57:13] - [SYSTEM] : Start
+[09-07-2020 23:57:13] - [Wish] : start wish
+[09-07-2020 23:57:13] - [Wish] : no birthday
+[09-07-2020 23:57:37] - [SYSTEM] : Start
+[09-07-2020 23:57:37] - [Wish] : start wish
+[09-07-2020 23:57:37] - [Wish] : no birthday
+[10-07-2020 00:00:28] - [Help] ask for help
+[10-07-2020 00:00:43] - [Help] ask for help
+[10-07-2020 00:00:44] - [Help] ask for help
+[10-07-2020 00:00:44] - [Help] ask for help
+[10-07-2020 00:00:45] - [Help] ask for help
+[10-07-2020 00:00:45] - [Help] ask for help
+[10-07-2020 00:00:45] - [Help] ask for help
+[10-07-2020 00:00:46] - [Help] ask for help
+[10-07-2020 00:00:46] - [Help] ask for help
+[10-07-2020 00:49:26] - [SYSTEM] : Start
+[10-07-2020 00:49:26] - [Wish] : start wish
+[10-07-2020 00:49:26] - [Wish] : no birthday
+[10-07-2020 00:49:31] - [Ping] pong!

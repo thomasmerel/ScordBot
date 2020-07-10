@@ -43,20 +43,39 @@ const Random = require('./actions/random');
 const Wish = require('./actions/wish');
 const Answers = require('./actions/answers');
 const Hello = require('./actions/hello');
+const Stop = require('./actions/stop');
 
 //Get env
 let prefix = process.env["BOT_PREFIX"];
-let dm = process.env["AUTHORIZED_DM"];     
+let dm = process.env["AUTHORIZED_DM"];  
+
+let messageCounter = 0;
+global.lastStopMessage = moment();
+let messageLimit = process.env["SPAM_LIMIT"];;
+let timeLimit = process.env["SPAM_TIME"];
 
 //On start
 bot.on('ready', function () {
-    Logs.snap('[SYSTEM] Start');
+    Logs.snap('[SYSTEM] : Start');
     bot.user.setActivity(prefix + 'help').catch();
     Wish.action(bot);
 });
 
 //On message
 bot.on('message', function (message) {
+    let now = moment();
+
+    console.log('now '+now);
+    console.log('last '+lastStopMessage);
+    console.log('diff '+now.diff(lastStopMessage));
+    console.log('timelimit '+timeLimit);
+    console.log('counter '+messageCounter);
+    console.log('--------------------');
+
+    if(now.diff(lastStopMessage) >= timeLimit && messageCounter > 0) {
+        messageCounter = 0;
+    }
+
     if (message.author.bot) {
         return false;
     }
@@ -69,6 +88,7 @@ bot.on('message', function (message) {
 
     if (message.isMentioned(bot.user)) {
         Mentions.action(message);
+        messageCounter++;
         return false;
     }
 
@@ -132,7 +152,7 @@ bot.on('message', function (message) {
 
 //On error
 bot.on('error', function (error) {
-    Logs.snap('[ERROR] ' + error);
+    Logs.snap('[ERROR] : ' + error);
 });
 
 //Cron tabs
