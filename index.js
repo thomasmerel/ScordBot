@@ -66,8 +66,6 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
     let now = moment();
 
-    console.log(messageCounter);
-
     if (message.author.bot) {
         return false;
     }
