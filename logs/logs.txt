@@ -295,3 +295,145 @@
 [10-07-2020 00:49:26] - [Wish] : start wish
 [10-07-2020 00:49:26] - [Wish] : no birthday
 [10-07-2020 00:49:31] - [Ping] pong!
+[10-07-2020 13:29:01] - [SYSTEM] : Start
+[10-07-2020 13:29:01] - [Wish] : start wish
+[10-07-2020 13:29:01] - [Wish] : no birthday
+[10-07-2020 13:29:23] - [Mentions] : Qu'est-ce que t'as, toi ?
+[10-07-2020 13:29:30] - [Mentions] : Tu cherches la merde ?
+[10-07-2020 13:29:30] - [Mentions] : Tu me cherches connard ?
+[10-07-2020 13:29:31] - [Mentions] : Qu'est-ce que t'as, toi ?
+[10-07-2020 13:29:31] - [Mentions] : Vas voir ailleurs si j'y suis.
+[10-07-2020 13:29:32] - [Mentions] : Tu cherches la merde ?
+[10-07-2020 13:30:23] - [SYSTEM] : Start
+[10-07-2020 13:30:23] - [Wish] : start wish
+[10-07-2020 13:30:24] - [Wish] : no birthday
+[10-07-2020 13:31:41] - [SYSTEM] : Start
+[10-07-2020 13:31:41] - [Wish] : start wish
+[10-07-2020 13:31:41] - [Wish] : no birthday
+[10-07-2020 13:32:52] - [SYSTEM] : Start
+[10-07-2020 13:32:52] - [Wish] : start wish
+[10-07-2020 13:32:52] - [Wish] : no birthday
+[10-07-2020 13:33:02] - [Random] : Tg
+[10-07-2020 13:33:14] - [Random] : Ah ouais Vulture ? <@&583195879557824524> ???
+[10-07-2020 13:51:49] - [SYSTEM] : Start
+[10-07-2020 13:51:49] - [Wish] : start wish
+[10-07-2020 13:51:49] - [Wish] : no birthday
+[10-07-2020 13:53:31] - [SYSTEM] : Start
+[10-07-2020 13:53:31] - [Wish] : start wish
+[10-07-2020 13:53:31] - [Wish] : no birthday
+[10-07-2020 13:54:29] - [SYSTEM] : Start
+[10-07-2020 13:54:29] - [Wish] : start wish
+[10-07-2020 13:54:29] - [Wish] : no birthday
+[10-07-2020 13:55:25] - [SYSTEM] : Start
+[10-07-2020 13:55:25] - [Wish] : start wish
+[10-07-2020 13:55:25] - [Wish] : no birthday
+[10-07-2020 13:55:39] - [SYSTEM] : Start
+[10-07-2020 13:55:39] - [Wish] : start wish
+[10-07-2020 13:55:39] - [Wish] : no birthday
+[10-07-2020 13:58:48] - [SYSTEM] : Start
+[10-07-2020 13:58:48] - [Wish] : start wish
+[10-07-2020 13:58:48] - [Wish] : no birthday
+[10-07-2020 16:45:42] - [SYSTEM] : Start
+[10-07-2020 16:45:42] - [Wish] : start wish
+[10-07-2020 16:45:42] - [Wish] : no birthday
+[10-07-2020 16:46:53] - [SYSTEM] : Start
+[10-07-2020 16:46:53] - [Wish] : start wish
+[10-07-2020 16:46:53] - [Wish] : no birthday
+[10-07-2020 16:47:04] - [Mentions] : Tu me cherches connard ?
+[10-07-2020 16:47:35] - [Mentions] : Vas voir ailleurs si j'y suis.
+[10-07-2020 16:47:36] - [Mentions] : Tu cherches la merde ?
+[10-07-2020 16:47:37] - [Mentions] : Tu cherches la merde ?
+[10-07-2020 16:47:37] - [Stop] : Bon... t'as fini ?
+[10-07-2020 16:47:38] - [Stop] : ça suffit là, non ?
+[10-07-2020 16:47:38] - [Stop] : ...
+[10-07-2020 16:47:39] - [Stop] : Bon... t'as fini ?
+[10-07-2020 16:47:39] - [Stop] : Bon... t'as fini ?
+[10-07-2020 16:47:47] - [Mentions] : Tu cherches la merde ?
+[10-07-2020 16:50:23] - [SYSTEM] : Start
+[10-07-2020 16:50:23] - [Wish] : start wish
+[10-07-2020 16:50:23] - [Wish] : no birthday
+[10-07-2020 16:50:32] - [Ping] pong!
+[10-07-2020 16:50:34] - [Ping] pong!
+[10-07-2020 16:50:35] - [Ping] pong!
+[10-07-2020 16:50:35] - [Ping] pong!
+[10-07-2020 16:50:36] - [Ping] pong!
+[10-07-2020 16:50:36] - [Ping] pong!
+[10-07-2020 16:50:37] - [Ping] pong!
+[10-07-2020 16:50:37] - [Ping] pong!
+[10-07-2020 16:50:38] - [Ping] pong!
+[10-07-2020 16:52:54] - [SYSTEM] : Start
+[10-07-2020 16:52:54] - [Wish] : start wish
+[10-07-2020 16:52:54] - [Wish] : no birthday
+[10-07-2020 16:53:00] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:53:00] - [Stop] : ...
+[10-07-2020 16:53:01] - [Stop] : Arrête toi là connard.
+[10-07-2020 16:53:02] - [Stop] : Bon... t'as fini ?
+[10-07-2020 16:53:02] - [Stop] : STOP !
+[10-07-2020 16:53:52] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:55:21] - [SYSTEM] : Start
+[10-07-2020 16:55:21] - [Wish] : start wish
+[10-07-2020 16:55:21] - [Wish] : no birthday
+[10-07-2020 16:55:32] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:55:33] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:55:34] - [Stop] : STOP !
+[10-07-2020 16:56:31] - [SYSTEM] : Start
+[10-07-2020 16:56:31] - [Wish] : start wish
+[10-07-2020 16:56:31] - [Wish] : no birthday
+[10-07-2020 16:56:37] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:56:38] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:56:38] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:56:39] - [Answers] : <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947> <:madman:406039772415655947>
+[10-07-2020 16:56:40] - [Stop] : Stop.
+[10-07-2020 16:56:40] - [Stop] : Bon... t'as fini ?
+[10-07-2020 16:56:41] - [Stop] : ...
+[10-07-2020 16:56:42] - [Stop] : Arrête toi là connard.
+[10-07-2020 16:56:43] - [Stop] : ça suffit là, non ?
+[10-07-2020 17:00:48] - [SYSTEM] : Start
+[10-07-2020 17:00:48] - [Wish] : start wish
+[10-07-2020 17:00:48] - [Wish] : no birthday
+[10-07-2020 17:00:55] - [Ping] pong!
+[10-07-2020 17:00:56] - [Ping] pong!
+[10-07-2020 17:00:57] - [Ping] pong!
+[10-07-2020 17:00:58] - [Ping] pong!
+[10-07-2020 17:00:59] - [Ping] pong!
+[10-07-2020 17:00:59] - [Ping] pong!
+[10-07-2020 17:00:59] - [Ping] pong!
+[10-07-2020 17:01:00] - [Ping] pong!
+[10-07-2020 17:01:09] - [Ping] pong!
+[10-07-2020 17:01:59] - [SYSTEM] : Start
+[10-07-2020 17:01:59] - [Wish] : start wish
+[10-07-2020 17:01:59] - [Wish] : no birthday
+[10-07-2020 17:02:03] - [Answers] : waza
+[10-07-2020 17:02:04] - [Answers] : waza
+[10-07-2020 17:02:04] - [Answers] : waza
+[10-07-2020 17:02:05] - [Answers] : waza
+[10-07-2020 17:02:06] - [Answers] : waza
+[10-07-2020 17:02:06] - [Stop] : Stop.
+[10-07-2020 17:02:07] - [Stop] : Arrête toi là connard.
+[10-07-2020 17:02:07] - [Stop] : STOP !
+[10-07-2020 17:02:08] - [Stop] : Stop.
+[10-07-2020 17:02:08] - [Stop] : ça suffit là, non ?
+[10-07-2020 17:02:13] - [Stop] : Arrête toi là connard.
+[10-07-2020 17:02:13] - [Stop] : Bon... t'as fini ?
+[10-07-2020 17:02:33] - [Answers] : waza
+[10-07-2020 17:02:34] - [Answers] : waza
+[10-07-2020 17:02:35] - [Answers] : waza
+[10-07-2020 17:02:36] - [Answers] : waza
+[10-07-2020 17:02:36] - [Answers] : waza
+[10-07-2020 17:02:37] - [Stop] : Arrête toi là connard.
+[10-07-2020 17:02:38] - [Stop] : ...
+[10-07-2020 17:02:45] - [Stop] : STOP !
+[10-07-2020 17:02:46] - [Stop] : STOP !
+[10-07-2020 17:03:17] - [Answers] : waza
+[10-07-2020 17:05:34] - [SYSTEM] : Start
+[10-07-2020 17:05:34] - [Wish] : start wish
+[10-07-2020 17:05:34] - [Wish] : no birthday
+[10-07-2020 17:05:37] - [Answers] : waza
+[10-07-2020 17:05:38] - [Answers] : waza
+[10-07-2020 17:05:39] - [Stop] : STOP !
+[10-07-2020 17:05:40] - [Stop] : Arrête toi là connard.
+[10-07-2020 17:05:41] - [Stop] : Arrête toi là connard.
+[10-07-2020 17:05:42] - [Stop] : ça suffit là, non ?
+[10-07-2020 17:05:58] - [Answers] : waza
+[10-07-2020 17:06:00] - [Answers] : waza
+[10-07-2020 17:06:01] - [Stop] : Arrête toi là connard.

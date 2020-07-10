@@ -3,6 +3,7 @@ const Logs = require('../actions/logs');
 module.exports = class Mentions {
     static action(message) {
         let fs = require('fs');
+        let moment = require('moment');
         let path = process.env["ACTION_PATH"];
         let file = path + '/' + 'mentions' + '.json';
 
@@ -17,6 +18,9 @@ module.exports = class Mentions {
                         obj = JSON.parse(data);
 
                         const randomResp = obj[Math.floor(Math.random() * obj.length)];
+
+                        lastMessage = moment();
+                        messageCounter++;
 
                         message.channel.send(randomResp);
                         Logs.snap('[Mentions] : ' + randomResp);

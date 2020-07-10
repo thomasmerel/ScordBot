@@ -19,8 +19,6 @@ module.exports = class Stop {
 
                         const randomResp = obj[Math.floor(Math.random() * obj.length)];
 
-                        lastStopMessage = moment();
-
                         message.channel.send(randomResp);
                         Logs.snap('[Stop] : ' + randomResp);
                     }

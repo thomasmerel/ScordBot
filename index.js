@@ -49,10 +49,11 @@ const Stop = require('./actions/stop');
 let prefix = process.env["BOT_PREFIX"];
 let dm = process.env["AUTHORIZED_DM"];  
 
-let messageCounter = 0;
-global.lastStopMessage = moment();
+global.messageCounter = 0;
+global.lastMessage = moment();
 let messageLimit = process.env["SPAM_LIMIT"];;
 let timeLimit = process.env["SPAM_TIME"];
+let limitReached = false;
 
 //On start
 bot.on('ready', function () {
@@ -65,16 +66,7 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
     let now = moment();
 
-    console.log('now '+now);
-    console.log('last '+lastStopMessage);
-    console.log('diff '+now.diff(lastStopMessage));
-    console.log('timelimit '+timeLimit);
-    console.log('counter '+messageCounter);
-    console.log('--------------------');
-
-    if(now.diff(lastStopMessage) >= timeLimit && messageCounter > 0) {
-        messageCounter = 0;
-    }
+    console.log(messageCounter);
 
     if (message.author.bot) {
         return false;
@@ -86,25 +78,42 @@ bot.on('message', function (message) {
         }
     }
 
+    if(now.diff(global.lastMessage) >= timeLimit) {
+        messageCounter = 0;
+        limitReached = false;
+    } else {
+        if(messageCounter >= messageLimit){
+            limitReached = true;
+        }
+    }
+
     if (message.isMentioned(bot.user)) {
-        Mentions.action(message);
-        messageCounter++;
+        if(!limitReached) {
+            Mentions.action(message);
+        } else {
+            Stop.action(message);
+        }
         return false;
     }
 
     if (message.content.lastIndexOf(prefix, 0) === 0) {
-        let commandUsed =
-            Ping.parse(message) ||
-            Pong.parse(message) ||
-            Add.parse(message) ||
-            Delete.parse(message) ||
-            List.parse(message) ||
-            Default.parse(message) ||
-            Sources.parse(message) ||
-            Roll.parse(message) ||
-            Sroll.parse(message) ||
-            Help.parse(message);
-
+        if(!limitReached) {
+            let commandUsed =
+                Ping.parse(message) ||
+                Pong.parse(message) ||
+                Add.parse(message) ||
+                Delete.parse(message) ||
+                List.parse(message) ||
+                Default.parse(message) ||
+                Sources.parse(message) ||
+                Roll.parse(message) ||
+                Sroll.parse(message) ||
+                Help.parse(message);
+            
+            messageCounter++;
+        } else {
+            Stop.action(message);
+        }
         return false;
     }
 
@@ -138,7 +147,11 @@ bot.on('message', function (message) {
                     Logs.snap(err)
                 } else {
                     let json = JSON.parse(data);
-                    Answers.action(json, message);
+                    if(!limitReached) {
+                        Answers.action(json, message);
+                    } else {
+                        Stop.action(message);
+                    }
                     return false;
                 }
             });
