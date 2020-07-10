@@ -2,4 +2,4 @@
 .idea/
 node_modules
 anniversaries/*.json
-logs/logs.txt
+logs/*.txt
