@@ -7,14 +7,7 @@ module.exports = class Answers {
         let triggers = json['triggers'];
         let answers = json['answers'];
 
-        let isMatch = false;
-
-        triggers.find(trigger => {
-            let regex = new RegExp(`(^|\\\s)${trigger}($|\\\s)`, 'gi');
-            if(msgLow.match(regex)) {
-                isMatch = true;
-            }
-        });
+        const isMatch = triggers.some(trigger => msgLow.match((new RegExp(`(^|\\\s)${trigger}($|\\\s)`, 'gi'))));
 
         if (isMatch) {
             let answer = answers[Math.floor(Math.random() * answers.length)];
