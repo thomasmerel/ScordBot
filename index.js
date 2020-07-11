@@ -110,6 +110,7 @@ bot.on('message', function (message) {
                 Poll.parse(message) ||
                 Help.parse(message);
             
+            lastMessage = moment();
             messageCounter++;
         } else {
             Stop.action(message);

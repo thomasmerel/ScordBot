@@ -19,12 +19,12 @@ ENV settings :
 - `ACTION_PATH` : Path where the .json actions files are located.
 - `LOG_PATH` : Path where the log files is located.
 - `DATE_FORMAT` : Date format the users have to respect. It's like the law but way cooler.
-- `RANDOM_RESPONSE` : Chances of random responses.
-- `CC_FS_BUCKET` : Clevercloud FS Bucket.
 - `AUTHORIZED_DM` : Authorize bot to respond to private messages.
-- `PORT` : HTTP Server port.
 - `SPAM_LIMIT` : Number of message before spam limit.
 - `SPAM_TIME` : Cooldown time (in millisecond).
+- `RANDOM_RESPONSE` : Chances of random responses.
+- `EMBED_COLOR` : Embed message's border color.
+- `PORT` : HTTP Server port.
 
 
 Dependencies :
@@ -49,12 +49,16 @@ Dependencies :
 | --source | Give bot's Github |
 | --roll XdY | Roll a dice (x=nb dice ; y=nb dice faces) |
 | --sroll XdY | Roll a secret dice (x=nb dice ; y=nb dice faces) |
+| --poll | Show poll help |
+| --poll "lorem ipsum" | Create a Yes/No poll |
+| --poll "lorem ipsum" "dolor" "sit" "amet" | Create a multi answer poll |
 | --ping | Pong. |
 
 # ToDo
 
 - ~~Clevercloud proof.~~
-- Add Poll.
+- ~~Add Poll.~~
+- Refacto help message.
 - Add more sentences.
 - Add multi languages ?
 - Add Google Natural Language API.

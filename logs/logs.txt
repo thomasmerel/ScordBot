@@ -1,6 +1,0 @@
-[10-07-2020 23:21:18] - [SYSTEM] : Start
-[10-07-2020 23:21:18] - [Wish] : start wish
-[10-07-2020 23:21:18] - [Wish] : no birthday
-[10-07-2020 23:22:27] - [SYSTEM] : Start
-[10-07-2020 23:22:27] - [Wish] : start wish
-[10-07-2020 23:22:27] - [Wish] : no birthday
