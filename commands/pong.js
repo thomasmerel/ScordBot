@@ -12,6 +12,6 @@ module.exports = class Pong extends Command {
 
         message.channel.send('Non.\n' +
             'https://amp.businessinsider.com/images/58a7024e01fe580f018b5282-960-639.jpg');
-        Logs.snap('[Pong] Non.');
+        Logs.snap('[Pong] : Non.');
     }
 };

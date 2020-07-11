@@ -68,7 +68,7 @@ module.exports = class Add extends Command {
                             } else {
                                 obj.bdays = new Object();
 
-                                Logs.snap('[Add birthday] first birthday added');
+                                Logs.snap('[Add birthday] : first birthday added');
                                 message.reply("ton anniversaire a bien été ajouté (félicitation tu es le premier. :clap:).")
                                     .then()
                                     .catch();

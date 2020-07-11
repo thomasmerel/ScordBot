@@ -43,7 +43,7 @@ module.exports = class Sroll extends Command {
                     }
                     let result = Math.floor(Math.random() * diceof) + 1;
 
-                    Logs.snap('[Secret Roll] ' + result);
+                    Logs.snap('[Secret Roll] : ' + result);
 
                     let space = '';
                     if (result < 10) {

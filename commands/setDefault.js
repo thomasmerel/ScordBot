@@ -1,4 +1,5 @@
 const Command = require('./command');
+const Logs = require('../actions/logs');
 
 module.exports = class SetDefault extends Command {
     static match(message) {
@@ -48,6 +49,7 @@ module.exports = class SetDefault extends Command {
                         fs.writeFileSync(file, json);
 
                         message.channel.send('Le channel par défaut a bien été mis a jour. :clap:');
+                        Logs.snap('[SetDefault] : Default channel set');
                     }
                 });
             } else {
@@ -59,6 +61,7 @@ module.exports = class SetDefault extends Command {
                 fs.writeFileSync(file, json);
 
                 message.channel.send('Le channel par défaut a bien été mis a jour. :clap:');
+                Logs.snap('[SetDefault] : Default channel updated');
             }
         });
     }

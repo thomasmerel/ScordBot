@@ -31,7 +31,7 @@ module.exports = class Delete extends Command {
                             let json = JSON.stringify(obj);
                             fs.writeFileSync(file, json);
 
-                            Logs.snap('[Delete birthday] birthday deleted');
+                            Logs.snap('[Delete birthday] : birthday deleted');
 
                             message.reply("Ton anniversaire a bien été supprimé :sob:")
                                 .then()
