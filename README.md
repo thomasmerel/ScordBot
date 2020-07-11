@@ -58,7 +58,8 @@ Dependencies :
 
 - ~~Clevercloud proof.~~
 - ~~Add Poll.~~
-- Refacto help message.
+- ~~Refacto help message.~~
+- Refacto sources message.
 - Add more sentences.
 - Add multi languages ?
 - Add Google Natural Language API.
