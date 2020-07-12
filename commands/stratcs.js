@@ -39,12 +39,16 @@ module.exports = class StratCs extends Command {
                         obj = JSON.parse(data);
 
                         let randomStrat = undefined;
+                        let messageDescr = '';
 
                         if(team == CONST_CT) {
+                            messageDescr = '**Voici la strat CT à appliquer :**';
                             randomStrat = obj.ct[Math.floor(Math.random() * obj.ct.length)];
                         } else if(team == CONST_TERRO) {
+                            messageDescr = '**Voici la strat Terro à appliquer :**';
                             randomStrat = obj.terro[Math.floor(Math.random() * obj.terro.length)];
                         } else if(team == CONST_BOTH) {
+                            messageDescr = '**Voici la stratégie à appliquer :**';
                             randomStrat = obj.both[Math.floor(Math.random() * obj.both.length)];
                         }
 
@@ -52,7 +56,7 @@ module.exports = class StratCs extends Command {
                             {embed:
                                 {
                                     color: process.env["EMBED_COLOR"],
-                                    description: "**Voici la stratégie à appliquer :**",
+                                    description: messageDescr,
                                     fields: [{
                                         name: randomStrat.title,
                                         value: randomStrat.strat
