@@ -37,6 +37,7 @@ const List = require('./commands/list');
 const Default = require('./commands/setDefault');
 const Sources = require('./commands/sources');
 const Poll = require('./commands/poll');
+const StratCs = require('./commands/stratcs');
 
 //Actions
 const Mentions = require('./actions/mentions');
@@ -108,6 +109,7 @@ bot.on('message', function (message) {
                 Roll.parse(message) ||
                 Sroll.parse(message) ||
                 Poll.parse(message) ||
+                StratCs.parse(message) ||
                 Help.parse(message);
             
             lastMessage = moment();

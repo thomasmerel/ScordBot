@@ -1,0 +1,24 @@
+{
+	"both" : [
+		{
+			"title": "xx Faze Clan's Stratz xx",
+			"strat": "Sniper et No Scope uniquement !"
+		},
+		{
+			"title": "The Golden Gun",
+			"strat": "When the first person on your team gets a kill, everyone else must throw away their weapons and share the weapon that the first kill was made with (the golden gun)."
+		}
+	],
+	"ct" : [
+		{
+			"title": "strat ct 1 title",
+			"strat": "strat ct 1 strat"
+		}
+	],
+	"terro" : [
+		{
+			"title": "strat t 1 title",
+			"strat": "strat t 1 strat"
+		}
+	]
+}
