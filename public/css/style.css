@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+  background-color: #1e2125;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100px;
+}
+
+.creator {
+  margin-right: 5px;
+}
