@@ -59,6 +59,7 @@ Dependencies :
 - ~~Clevercloud proof.~~
 - ~~Add Poll.~~
 - ~~Refacto help message.~~
+- Add HTML homepage.
 - Refacto sources message.
 - Add more sentences.
 - Add multi languages ?
