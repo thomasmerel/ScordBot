@@ -1,16 +1,40 @@
 require('dotenv').config({path: `.env`});
 
-// Load the http module to create an http server.
 const http = require('http');
 
-// Configure our HTTP server to respond with Hello World to all requests.
 const server = http.createServer((request, response) => {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("START HTTP SERVER\n");
+    let file = '';
+    let type = '';
+
+    switch (request.url) {
+        case '/script.js':
+            file = './public/js/script.js'
+            type = 'text/javascript';
+            break;
+        case '/style.css':
+            file = './public/css/style.css'
+            type = 'text/css';
+            break;
+        case '/discord.png':
+            file = './public/img/scordbot.png'
+            type = 'image/png';
+            break;
+        default:
+            file = './public/html/homepage.html'
+            type = 'text/html';
+      }
+
+    fs.exists(file, function (exists) {
+        if (exists) {
+            fs.readFile(file, function readFileCallback(err, data) {
+                response.writeHead(200, {'Content-Type': type,'Content-Length':data.length});
+                response.write(data);
+                response.end();
+            });
+        }
+    });
 });
 
-// Last, but not least, listen on port 8080
-// The environment variable PORT is automatically defined and equals to 8080
 server.listen(process.env["PORT"], '0.0.0.0');
 
 //Set
