@@ -59,6 +59,7 @@ Dependencies :
 - ~~Clevercloud proof.~~
 - ~~Add Poll.~~
 - ~~Refacto help message.~~
+- ~~Add HTML homepage.~~
 - Refacto sources message.
 - Add more sentences.
 - Add multi languages ?
@@ -68,6 +69,10 @@ Dependencies :
 # Invite this bot to your server
 
 [Invite](https://discordapp.com/api/oauth2/authorize?client_id=678527921140400138&permissions=8&scope=bot)
+
+# Bot's website
+
+[Website](http://scordbot.thomas-merel.fr/)
 
 # License
 
