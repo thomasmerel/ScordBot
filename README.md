@@ -72,7 +72,7 @@ Dependencies :
 
 # Bot's website
 
-[Website](http://scordbot.thomas-merel.fr/)
+[Website](https://scordbot.thomas-merel.fr/)
 
 # License
 
