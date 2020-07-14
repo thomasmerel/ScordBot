@@ -70,6 +70,10 @@ Dependencies :
 
 [Invite](https://discordapp.com/api/oauth2/authorize?client_id=678527921140400138&permissions=8&scope=bot)
 
+# Bot's website
+
+[Website](http://scordbot.thomas-merel.fr/)
+
 # License
 
 This project is on Beer-Ware license :
