@@ -1,0 +1,20 @@
+{
+	"both" : [
+		{
+			"title": "strat both 1 title",
+			"strat": "strat both 1 description"
+		}
+	],
+	"ct" : [
+		{
+			"title": "strat ct 1 title",
+			"strat": "strat ct 1 description"
+		}
+	],
+	"terro" : [
+		{
+			"title": "strat t 1 title",
+			"strat": "strat t 1 description"
+		}
+	]
+}

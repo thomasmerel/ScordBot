@@ -54,6 +54,10 @@ module.exports = class Help extends Command {
                         value: 'Créer un sondage à choix multiple'
                     },
                     {
+                        name: process.env["BOT_PREFIX"]+'stratcs `both`/`t`/`ct`',
+                        value: 'Sort une strat aléatoire à appliquer pour Counter Strike'
+                    },
+                    {
                         name: process.env["BOT_PREFIX"]+'ping',
                         value: 'Pong.'
                     },
