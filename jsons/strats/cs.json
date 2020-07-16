@@ -1,24 +1,20 @@
 {
 	"both" : [
 		{
-			"title": "xX Faze Clan Xx",
-			"strat": "Sniper et No Scope uniquement !"
-		},
-		{
-			"title": "The Golden Gun",
-			"strat": "Dés qu'un membre de votre équipe tue un enemis, tous les membres de l'équipe doivent jeter leurs armes et partager l'arme de l'enemis tué (the golden gun)."
+			"title": "strat both 1 title",
+			"strat": "strat both 1 description"
 		}
 	],
 	"ct" : [
 		{
 			"title": "strat ct 1 title",
-			"strat": "strat ct 1 strat"
+			"strat": "strat ct 1 description"
 		}
 	],
 	"terro" : [
 		{
 			"title": "strat t 1 title",
-			"strat": "strat t 1 strat"
+			"strat": "strat t 1 description"
 		}
 	]
 }

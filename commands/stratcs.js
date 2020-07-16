@@ -42,12 +42,15 @@ module.exports = class StratCs extends Command {
                         let messageDescr = '';
 
                         if(team == CONST_CT) {
+                            console.log(obj.ct.length);
                             messageDescr = '**Voici la strat CT à appliquer :**';
                             randomStrat = obj.ct[Math.floor(Math.random() * obj.ct.length)];
                         } else if(team == CONST_TERRO) {
+                            console.log(obj.terro.length);
                             messageDescr = '**Voici la strat Terro à appliquer :**';
                             randomStrat = obj.terro[Math.floor(Math.random() * obj.terro.length)];
                         } else if(team == CONST_BOTH) {
+                            console.log(obj.both.length);
                             messageDescr = '**Voici la stratégie à appliquer :**';
                             randomStrat = obj.both[Math.floor(Math.random() * obj.both.length)];
                         }
@@ -66,7 +69,7 @@ module.exports = class StratCs extends Command {
                             });
 
                         
-                        Logs.snap('[Strat CS] : ask for strat :' +randomStrat.title);
+                        Logs.snap('[Strat CS] : ask for strat : ' +randomStrat.title);
                     }
                 });
             } else {
