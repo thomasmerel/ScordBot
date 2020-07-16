@@ -42,17 +42,18 @@ Dependencies :
 # Commands
 | Command | Action |
 | ------ | ------ |
-| --help | Show help |
-| --add [DATE_FORMAT] | Add birthday |
-| --delete | Delete user's birthday |
-| --setDefault | Set default channel where birthday are wished (Admin only) |
-| --source | Give bot's Github |
-| --roll XdY | Roll a dice (x=nb dice ; y=nb dice faces) |
-| --sroll XdY | Roll a secret dice (x=nb dice ; y=nb dice faces) |
-| --poll | Show poll help |
-| --poll "lorem ipsum" | Create a Yes/No poll |
-| --poll "lorem ipsum" "dolor" "sit" "amet" | Create a multi answer poll |
-| --ping | Pong. |
+| !help | Show help |
+| !add [DATE_FORMAT] | Add birthday |
+| !delete | Delete user's birthday |
+| !setDefault | Set default channel where birthday are wished (Admin only) |
+| !source | Give bot's Github |
+| !roll XdY | Roll a dice (x=nb dice ; y=nb dice faces) |
+| !sroll XdY | Roll a secret dice (x=nb dice ; y=nb dice faces) |
+| !poll | Show poll help |
+| !poll "lorem ipsum" | Create a Yes/No poll |
+| !poll "lorem ipsum" "dolor" "sit" "amet" | Create a multi answer poll |
+| !startcs both/t/ct | Give you random strat for Counter Strike |
+| !ping | Pong. |
 
 # ToDo
 
@@ -60,6 +61,7 @@ Dependencies :
 - ~~Add Poll.~~
 - ~~Refacto help message.~~
 - ~~Add HTML homepage.~~
+- ~~Add Counter Strike strategy.~~
 - Refacto sources message.
 - Add more sentences.
 - Add multi languages ?
