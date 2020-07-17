@@ -63,7 +63,7 @@ Dependencies :
 - ~~Add HTML homepage.~~
 - ~~Add Counter Strike strategy.~~
 - Refacto sources message.
-- Add more sentences.
+- Refacto wish.
 - Add multi languages ?
 - Add Google Natural Language API.
 - Improve the bot, so he will become a real little boy.
