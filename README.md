@@ -62,6 +62,7 @@ Dependencies :
 - ~~Refacto help message.~~
 - ~~Add HTML homepage.~~
 - ~~Add Counter Strike strategy.~~
+- Refacto Random to add random reaction.
 - Refacto sources message.
 - Refacto wish.
 - Add multi languages ?
