@@ -1,8 +1,5 @@
 module.exports = class Logs {
     static snap(message) {
-        if(process.env["SAVE_LOG"] === 'FALSE'){
-            return false;
-        }
 
         let fs = require('fs');
         const moment = require('moment');
@@ -14,14 +11,18 @@ module.exports = class Logs {
 
         fs.exists(path, function (exists) {
             if (exists) {
-                fs.appendFile(path, log, function (err) {
-                    if (err) process.stdout.write(err);
-                });
+                if(process.env["SAVE_LOG"] === 'TRUE'){
+                    fs.appendFile(path, log, function (err) {
+                        if (err) process.stdout.write(err);
+                    });
+                }
                 process.stdout.write(log);
             } else {
-                fs.writeFile(path, log, function (err) {
-                    if (err) process.stdout.write(err);
-                });
+                if(process.env["SAVE_LOG"] === 'TRUE'){
+                    fs.writeFile(path, log, function (err) {
+                        if (err) process.stdout.write(err);
+                    });
+                }
                 process.stdout.write(log);
             }
         });
