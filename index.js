@@ -96,6 +96,10 @@ bot.on('message', function (message) {
         return false;
     }
 
+    if (message.attachments.size > 0) {
+        return false;
+    }
+
     if (dm === 'FALSE') {
         if (message.channel.type === 'dm' || message.channel.type === 'group') {
             return false;
