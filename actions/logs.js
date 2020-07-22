@@ -1,5 +1,9 @@
 module.exports = class Logs {
     static snap(message) {
+        if(process.env["SAVE_LOG"] === 'FALSE'){
+            return false;
+        }
+
         let fs = require('fs');
         const moment = require('moment');
 

@@ -25,6 +25,7 @@ ENV settings :
 - `RANDOM_RESPONSE` : Chances of random responses.
 - `EMBED_COLOR` : Embed message's border color.
 - `PORT` : HTTP Server port.
+- `SAVE_LOG` : TRUE/FALSE.
 
 
 Dependencies :
