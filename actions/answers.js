@@ -10,9 +10,19 @@ module.exports = class Answers {
             if(msgLow.includes(key)) {
                 lastMessage = moment();
                 messageCounter++;
-                message.channel.send(value);
 
-                Logs.snap('[Answers] : ' + value);
+                let response = '';
+                if(value.includes(' ; ')) {
+                    let values = value.split(' ; ')
+                    console.log(values)
+                    response = values[Math.floor(Math.random() * values.length)];
+                } else {
+                    response = value;
+                }
+
+                message.channel.send(response);
+
+                Logs.snap('[Answers] : ' + response);
 
                 return false;
             }
