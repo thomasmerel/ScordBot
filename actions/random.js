@@ -1,5 +1,20 @@
 const Logs = require('../actions/logs');
 
+const Emotes = [
+    "🤣",
+    "😐",
+    "🤠",
+    "💩",
+    "🦖",
+    "🐉",
+    "✔️",
+    "❌",
+    "😬",
+    "🖕",
+    "🙃",
+    "🤮"
+];
+
 module.exports = class Random {
     static action(message) {
         let chances = process.env["RANDOM_RESPONSE"];
@@ -28,8 +43,14 @@ module.exports = class Random {
                         let response = randomRespRaw.replace('<user>', message.author.username);
                         response = response.replace('<message>', message.toString().toUpperCase());
 
-                        message.channel.send(response);
-                        Logs.snap('[Random] : ' + response);
+                        if(response === '<react>') {
+                            let randomReact = Emotes[Math.floor(Math.random() * Emotes.length)];
+                            message.react(randomReact);
+                            Logs.snap('[Random] : REACT: ' + randomReact);
+                        } else {
+                            message.channel.send(response);
+                            Logs.snap('[Random] : ' + response);
+                        }
                     }
                 });
             } else {
