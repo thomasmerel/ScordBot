@@ -37,7 +37,7 @@ module.exports = class Wish {
                                     let defaultChan = guild.channels.find(val => val.id === obj.default['channel']);
                                     let user = guild.members.find(val => val.id === key);
 
-                                    if (defaultChan !== null) {
+                                    if (defaultChan !== null && user !== null) {
 
                                         let fs = require('fs');
                                         let path = process.env["ACTION_PATH"];
