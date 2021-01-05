@@ -53,7 +53,7 @@ Dependencies :
 | !poll | Show poll help |
 | !poll "lorem ipsum" | Create a Yes/No poll |
 | !poll "lorem ipsum" "dolor" "sit" "amet" | Create a multi answer poll |
-| !startcs both/t/ct | Give you random strat for Counter Strike |
+| !csgo strat both/t/ct | Give you random strat for Counter Strike |
 | !ping | Pong. |
 
 # ToDo

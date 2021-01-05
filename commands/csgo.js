@@ -19,6 +19,31 @@ module.exports = class StratCs extends Command {
                 this.strat(message);
                 break;
             default:
+                if(action === undefined){
+                    message.channel.send('Pas d\'action défini  : `'+process.env["BOT_PREFIX"]+'csgo [ACTION]`');
+                    message.channel.send('Par exemple : `'+process.env["BOT_PREFIX"]+'csgo strat`');
+                }
+                message.channel.send(
+                    {embed:
+                        {
+                            color: process.env["EMBED_COLOR"],
+                            description: '**Voici les actions disponible actuellement :**',
+                            fields: [
+                                {
+                                    name: ''+process.env["BOT_PREFIX"]+'csgo strat',
+                                    value: 'Stratégie générique à appliquer'
+                                },
+                                {
+                                    name: ''+process.env["BOT_PREFIX"]+'csgo strat t',
+                                    value: 'Strategie Terro à appliquer'
+                                },
+                                {
+                                    name: ''+process.env["BOT_PREFIX"]+'csgo strat ct',
+                                    value: 'Strategie CT à appliquer'
+                                },
+                            ]
+                        }
+                    });
                 Logs.snap('[CSGO] : not action set for "'+action+'"');
                 break;
         }
