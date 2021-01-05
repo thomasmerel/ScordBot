@@ -8,12 +8,24 @@ const CONST_BOTH = 'both';
 
 module.exports = class StratCs extends Command {
     static match(message) {
-        return message.content.startsWith(process.env["BOT_PREFIX"] + 'stratcs');
+        return message.content.startsWith(process.env["BOT_PREFIX"] + 'csgo');
     }
 
     static action(message) {
-        
-        let args = message.content.split(' ')[1];
+        let action = message.content.split(' ')[1];
+
+        switch (action) {
+            case 'strat':
+                this.strat(message);
+                break;
+            default:
+                Logs.snap('[CSGO] : not action set for "'+action+'"');
+                break;
+        }
+    }
+
+    static strat(message) {
+        let args = message.content.split(' ')[2];
         let team = CONST_BOTH;
 
         if(args == 'ct'){
@@ -69,7 +81,7 @@ module.exports = class StratCs extends Command {
                             });
 
                         
-                        Logs.snap('[Strat CS] : ask for strat : ' +randomStrat.title);
+                        Logs.snap('[CSGO Strat] : ask for strat : ' +randomStrat.title);
                     }
                 });
             } else {
