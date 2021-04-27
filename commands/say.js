@@ -12,6 +12,6 @@ module.exports = class StratCs extends Command {
 
         message.channel.send(sentence);
         message.delete()
-        Logs.snap('[Poll] : ScordBot said : '+sentence);
+        Logs.snap('[Say] : ScordBot said : '+sentence);
     }
 };
