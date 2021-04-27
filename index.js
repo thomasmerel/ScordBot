@@ -62,6 +62,7 @@ const Default = require('./commands/setDefault');
 const Sources = require('./commands/sources');
 const Poll = require('./commands/poll');
 const Csgo = require('./commands/csgo');
+const Say = require('./commands/say');
 
 //Actions
 const Mentions = require('./actions/mentions');
@@ -138,6 +139,7 @@ bot.on('message', function (message) {
                 Sroll.parse(message) ||
                 Poll.parse(message) ||
                 Csgo.parse(message) ||
+                Say.parse(message) ||
                 Help.parse(message);
             
             lastMessage = moment();
