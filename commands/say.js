@@ -8,7 +8,7 @@ module.exports = class StratCs extends Command {
     }
 
     static action(message) {
-        let sentence = message.contenta.substr(5);
+        let sentence = message.content.substr(5);
 
         message.channel.send(sentence);
         message.delete()
